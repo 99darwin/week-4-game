@@ -1,0 +1,30 @@
+.jumbotron {
+	background-image: url(../images/hero-one.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+body {
+	background-image: url(../images/poke-bg-2.jpg);
+}
+
+.row {
+	background: #FF4615;
+	padding-top: 10px;
+	border-radius: 10px;
+}
+
+h1, h3, h4, p, ul, li {
+	color: white;
+}
+
+.btn-primary {
+	background-color: white;
+	color: black;
+}
+
+.btn-primary:hover {
+	background-color: grey;
+	color: white;
+}

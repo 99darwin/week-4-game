@@ -18,7 +18,7 @@
 $(document).ready(function() {
 // GLOBAL VARIABLES
 // ============================================================
-var startScore = Math.floor(Math.random() * 40) + 1;
+var startScore = Math.floor(Math.random() * 121) + 19;
 var totalScore = 0;
 var wins = 0;
 var losses = 0;
@@ -34,32 +34,32 @@ audio.play();
 
 // Gem click functions
 $('#boulder').on("click", function(){
-	for (var i = 0; i < 5; i++) {
-		var random = Math.floor(Math.random() * 2) +1;
+	for (var i = 0; i < 2; i++) {
+		var random = Math.floor(Math.random() * 13) +1;
 	    totalScore = totalScore + random;
 	    $('#totalScore').html(totalScore);
 	}
 	winLose();
 });
 $('#mine').on("click", function(){
-	for (var i = 0; i < 5; i++) {
-		var random = Math.floor(Math.random() * 2) +1;
+	for (var i = 0; i < 2; i++) {
+		var random = Math.floor(Math.random() * 13) +1;
 	    totalScore = totalScore + random;
 	    $('#totalScore').html(totalScore);
 	}
 	winLose();
 });
 $('#rainbow').on("click", function(){
-	for (var i = 0; i < 5; i++) {
-		var random = Math.floor(Math.random() * 2) +1;
+	for (var i = 0; i < 2; i++) {
+		var random = Math.floor(Math.random() * 13) +1;
 	    totalScore = totalScore + random;
 	    $('#totalScore').html(totalScore);
 	}
 	winLose();
 });
 $('#relic').on("click", function(){
-	for (var i = 0; i < 5; i++) {
-		var random = Math.floor(Math.random() * 2) +1;
+	for (var i = 0; i < 2; i++) {
+		var random = Math.floor(Math.random() * 13) +1;
 	    totalScore = totalScore + random;
 	    $('#totalScore').html(totalScore);
 	}
@@ -88,7 +88,7 @@ function winLose() {
 $('#playAgain').on("click", function(){ 
 	totalScore = 0;
 	$('#totalScore').html("");
-	startScore = Math.floor(Math.random() * 40) + 1;
+	startScore = Math.floor(Math.random() * 121) + 19;
 	$('#startScore').html(startScore);
 	$('#resultText').html(" ");
 	$('#playAgain').hide();
